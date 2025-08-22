@@ -292,7 +292,7 @@
 .boton-mas-proyectos {
   display: flex;
   justify-content: center; 
-  margin-top: 30px;
+  margin-top: -4vw;
   width: 100%;
 }
 
@@ -325,4 +325,81 @@
   height: 30px;
   vertical-align: middle;
   margin-left: 8px;
+}
+
+/* --- MEDIA QUERIES --- */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .lateral-info {
+    margin-left: 5vw;
+    text-align: center;
+  }
+
+  .filas-proyectos {
+    gap: 1.5rem;
+    width: 95%;
+  }
+
+  .card-proyecto {
+    max-width: 400px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .lateral-info {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  .contenedor-titulo h1 {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+  }
+
+  .subtexto-proyectos {
+    font-size: 0.75rem;
+    margin-bottom: 20px;
+  }
+
+  .filas-proyectos {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .info-proyecto {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .iconos a {
+    width: 32px;
+    height: 32px;
+  }
+
+  .btn-more-projects {
+    padding: 12px 20px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Smartphones pequeños */
+@media (max-width: 480px) {
+  .contenedor-titulo h1 {
+    font-size: clamp(1.2rem, 7vw, 2rem);
+  }
+
+  .subtexto-proyectos {
+    font-size: 0.7rem;
+  }
+
+  .iconos {
+    gap: 6px;
+  }
+
+  .iconos a {
+    width: 28px;
+    height: 28px;
+  }
 }

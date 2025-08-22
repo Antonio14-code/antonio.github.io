@@ -14,7 +14,6 @@
   flex: 1;
 }
 
-/* Tarjetas */
 .proyecto-card {
   position: relative;
   overflow: hidden;
@@ -64,14 +63,13 @@
   border-radius: 12px;
   border: 2px solid #111;
   object-fit: cover;
-  width: calc(100% - 24px);  /* Resta el padding horizontal */
-  height: calc(100% - 24px); /* Resta el padding vertical */
+  width: calc(100% - 24px);  
+  height: calc(100% - 24px); 
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   z-index: 2;
 }
 
-/* Efecto al pasar el mouse */
 .proyecto-card:hover .imagen-hover {
   opacity: 1;
 }
@@ -80,17 +78,14 @@
   opacity: 0;
 }
 
-/* Escala suave */
 .proyecto-card:hover {
   transform: scale(1.02);
 }
 
-/* Rectangulares con proporción específica */
 .proyecto-card.rectangular {
   aspect-ratio: 16 / 5.5;
 }
 
-/* Tooltip opcional */
 .tooltip-certificado {
   position: fixed;
   transform: translateX(-60%) translateY(6px); 
@@ -106,4 +101,3 @@
   transition: opacity 0.2s ease top 0.1s ease;
   z-index: 1000;
 }
-
