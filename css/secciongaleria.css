@@ -107,23 +107,3 @@
   z-index: 1000;
 }
 
-/* Responsive */
-@media screen and (max-width: 768px) {
-  .galeria-columnas {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .columna {
-    width: 100%;
-    align-items: center;
-  }
-
-  .proyecto-card {
-    max-width: 90%;
-  }
-
-  .proyecto-card.rectangular {
-    display: none;
-  }
-}
