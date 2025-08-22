@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+/* === Estilos generales === */
+body {
+  font-family: "Acme", sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Contenedor del Encabezado === */
+.header-container {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%; 
+  min-width: 320px; 
+  max-width: 950px;
+  background-color: rgba(20, 20, 20, 0.4); 
+  backdrop-filter: blur(15px);            
+  -webkit-backdrop-filter: blur(15px);     
+  border-radius: 40px;
+  border: 1px solid #222222;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.499);
+  z-index: 9999;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+}
+
+/* === Encabezado === */
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+/* === Logo === */
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+/* === Botón Hamburguesa === */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  width: 28px;
+  height: 22px;
+  z-index: 10;
+}
+
+.menu-toggle .bar {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.menu-toggle.x .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.x .bar:nth-child(2) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* === Navegación === */
+.navegacion {
+  display: flex;
+  align-items: center;
+}
+
+.navegacion ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navegacion ul li a {
+  text-decoration: none;
+  color: #656464;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navegacion ul li a:hover {
+  color: #fff;
+}
+
+.logo-img {
+  margin-top: 0.2vw;
+  margin-left: 1.5vw;
+  height: 25px;
+  object-fit: contain;
+  display: block;
+}
+
+/* === Responsive === */
+@media (max-width: 1100px) {
+  .header-container {
+    width: 60%;
+    min-width: unset;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 20px;
+    background-color: rgba(20, 20, 20, 0.4);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px)
+  }
+
+  .encabezado {
+    width: 100%;
+  }
+
+  .logo {
+    margin-left: 2vw;
+    font-size: 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navegacion {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navegacion.show {
+    display: flex;
+  }
+
+  .navegacion ul {
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 0;
+  }
+
+  .navegacion ul li a {
+    margin-left: 2vw;
+    color: #656464;
+    font-size: 16px;
+    padding: 8px 0;
+  }
+
+  .navegacion ul li a:hover {
+    color: #fff;
+  }
+}

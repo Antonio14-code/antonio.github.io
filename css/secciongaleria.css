@@ -1,0 +1,129 @@
+.galeria-columnas {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 8vw auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.columna {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+}
+
+/* Tarjetas */
+.proyecto-card {
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(17, 17, 17); 
+  padding: 12px; 
+  border-radius: 20px;
+  box-shadow:
+    rgba(0, 0, 0, 0.4) 16px 24px 20px 8px,
+    rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset; 
+  transition: transform 0.3s ease;
+  max-width: 100%;
+  cursor: pointer;
+  aspect-ratio: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proyecto-card .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); 
+  border-radius: 16px;
+  pointer-events: none; 
+  z-index: 3;
+}
+
+.proyecto-card .imagen-base {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #111;
+  display: block;
+  transition: opacity 0.6s ease;
+  filter: grayscale(100%);
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.proyecto-card .imagen-hover {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  border-radius: 12px;
+  border: 2px solid #111;
+  object-fit: cover;
+  width: calc(100% - 24px);  /* Resta el padding horizontal */
+  height: calc(100% - 24px); /* Resta el padding vertical */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 2;
+}
+
+/* Efecto al pasar el mouse */
+.proyecto-card:hover .imagen-hover {
+  opacity: 1;
+}
+
+.proyecto-card:hover .imagen-base {
+  opacity: 0;
+}
+
+/* Escala suave */
+.proyecto-card:hover {
+  transform: scale(1.02);
+}
+
+/* Rectangulares con proporción específica */
+.proyecto-card.rectangular {
+  aspect-ratio: 16 / 5.5;
+}
+
+/* Tooltip opcional */
+.tooltip-certificado {
+  position: fixed;
+  transform: translateX(-60%) translateY(6px); 
+  padding: 0.4rem 0.8rem;
+  backdrop-filter: blur(15px);   
+  color: #fff;
+  font-size: 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  pointer-events: none;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s ease top 0.1s ease;
+  z-index: 1000;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .galeria-columnas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .columna {
+    width: 100%;
+    align-items: center;
+  }
+
+  .proyecto-card {
+    max-width: 90%;
+  }
+
+  .proyecto-card.rectangular {
+    display: none;
+  }
+}
