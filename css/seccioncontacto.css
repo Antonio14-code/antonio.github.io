@@ -1,0 +1,279 @@
+/* Sección principal */
+.contacto-section {
+  margin-top: -3vw;
+  padding: 80px 20px; /* Reducido */
+  border-radius: 4vw 4vw 0 0;
+  background-color: #000;
+  border: 1px solid #222;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Cabecera */
+.contacto-header {
+  margin-left: 6vw;
+  margin-bottom: 30px;
+}
+
+/* Etiqueta "Let's Connect" */
+.etiqueta-contacto {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px; /* Más pequeño */
+  padding: 6px 10px; /* Más compacto */
+  border-radius: 20px;
+  background-color: #111;
+  box-shadow:
+    rgba(0, 0, 0, 0.4) 16px 24px 20px 8px,
+    rgba(184, 180, 180, 0.08) 0px 2px 0px inset;
+  margin-bottom: 10px;
+}
+
+/* Círculos decorativos */
+.circle-white, .circle-black, .small-circle {
+  border-radius: 50%;
+}
+.circle-white {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle-black {
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.small-circle {
+  width: 4px;
+  height: 4px;
+  background-color: #fff;
+}
+
+/* Título principal */
+.titulo-contacto {
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem); /* Más pequeño */
+  margin-bottom: 15px;
+}
+.titulo-contacto .blanco {
+  color: #fff;
+}
+.titulo-contacto .gris {
+  color: #999;
+}
+
+/* Descripción */
+.intro-descripcion {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+/* Contenedor general */
+.contenido-form-wrapper {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Columna izquierda */
+.contenido-left {
+  flex: 1;
+  margin-left: 15vw;
+  min-width: 280px;
+  max-width: 450px; /* nuevo */
+}
+
+
+/* Estadísticas */
+.estadisticas {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 0;
+  text-align: center;
+}
+.stat-box {
+  background-color: #111;
+  padding: 15px;
+  border-radius: 16px;
+  width: 100px;
+}
+.stat-box h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.stat-box p {
+  font-size: 0.7rem;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* Testimonio */
+.testimonio {
+  display: flex;
+  gap: 15px;
+  background-color: #111;
+  padding: 20px;
+  border-radius: 16px;
+  margin: 30px 0;
+  align-items: flex-start;
+}
+.avatar img {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+.contenido-testimonio h3 {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.contenido-testimonio span {
+  font-size: 0.7rem;
+  color: #aaa;
+}
+.contenido-testimonio .estrellas {
+  color: gold;
+  font-size: 0.85rem;
+  margin: 4px 0;
+}
+.contenido-testimonio p {
+  font-size: 0.8rem;
+  color: #bbb;
+  line-height: 1.4;
+}
+
+/* Preferencia de llamada */
+.preferencia-llamada {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111;
+  padding: 16px 20px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+}
+.preferencia-llamada p {
+  margin: 0;
+  font-size: 0.85rem;
+}
+.btn-call {
+  background: #222;
+  padding: 8px 16px;
+  border-radius: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.btn-call:hover {
+  background: #444;
+}
+
+/* Columna derecha - Formulario */
+.contacto-container {
+  flex: 1;
+  max-width: 480px;
+}
+
+/* Formulario */
+#contact-form {
+  background-color: rgba(20, 20, 20, 0.4);
+  padding: 30px;
+  border-radius: 24px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid #222;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+.form-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.form-row input {
+  flex: 1;
+}
+#contact-form input,
+#contact-form textarea,
+#contact-form select {
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+  font-size: 0.85rem;
+  width: 100%;
+}
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+  color: #666;
+}
+#contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+#contact-form button {
+  padding: 10px;
+  background: linear-gradient(to right, #666, #999);
+  border: none;
+  border-radius: 24px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#contact-form button:hover {
+  background: linear-gradient(to right, #999, #ccc);
+  transform: translateY(-2px);
+}
+#contact-form .disclaimer {
+  text-align: center;
+  font-size: 0.7rem;
+  color: #888;
+  margin-top: -6px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contacto-header {
+    margin-left: 5vw;
+  }
+
+  .contenido-form-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .estadisticas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .preferencia-llamada {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .testimonio {
+    flex-direction: column;
+  }
+}

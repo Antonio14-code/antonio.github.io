@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/secciongaleria.css" />
   <link rel="stylesheet" href="css/seccionservicios.css" />
   <link rel="stylesheet" href="css/seccionproyectos.css" />
+  <link rel="stylesheet" href="css/seccioncontacto.css" />
 </head>
 <body>
 
@@ -454,6 +455,88 @@
       </a>
     </div>
   </section>
+
+  <section class="contacto-section" id="contacto">
+  <div class="contacto-header">
+    <div class="etiqueta-contacto">
+      <div class="circle-white">
+        <div class="circle-black">
+          <div class="small-circle"></div>
+        </div>
+      </div>
+      Let's Connect
+    </div>
+
+    <h1 class="titulo-contacto">
+      <span class="blanco">Let's Collaborate</span>
+      <span class="gris">and Begin the work</span>
+    </h1>
+  </div>
+
+  <!-- NUEVO CONTENEDOR HORIZONTAL -->
+  <div class="contenido-form-wrapper">
+    <!-- Columna izquierda -->
+    <div class="contenido-left">
+      <!-- Estadísticas -->
+      <div class="estadisticas">
+        <div class="stat-box">
+          <h2>100+</h2>
+          <p>Happy clients</p>
+        </div>
+        <div class="stat-box">
+          <h2>$250m</h2>
+          <p>revenue added</p>
+        </div>
+        <div class="stat-box">
+          <h2>4.8</h2>
+          <p>Average Rating</p>
+        </div>
+      </div>
+
+      <!-- Testimonio -->
+      <div class="testimonio">
+        <div class="avatar">
+          <img src="/img/foto.png" alt="Client Photo">
+        </div>
+        <div class="contenido-testimonio">
+          <h3>Ryan Harper</h3>
+          <span>Ryan Toys</span>
+          <div class="estrellas">★★★★★</div>
+          <p>Using this analytics tool has been a game-changer for our team. The seamless interface and actionable insights make every decision smarter.</p>
+        </div>
+      </div>
+
+      <!-- Preferencia de llamada -->
+      <div class="preferencia-llamada">
+          <p>Prefer to book a call?</p>
+          <a href="#" class="btn-call">Let's Book A Call</a>
+        </div>
+      </div>
+
+      <!-- Columna derecha: Formulario -->
+      <div class="contacto-container">
+        <form id="contact-form" action="#" method="post">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+          <input type="text" name="website" placeholder="Company Website (optional)">
+          <select name="budget" required>
+            <option value="">Select Budget...</option>
+            <option value="under5k">Under $5k</option>
+            <option value="5k-10k">$5k - $10k</option>
+            <option value="10k-50k">$10k - $50k</option>
+            <option value="50k+">$50k+</option>
+          </select>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+          <p class="disclaimer">We will reach out to you within 48hrs</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
 <script src="js/script.js"></script>
 </body>
 </html>

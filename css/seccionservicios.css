@@ -3,7 +3,7 @@
   padding: 100px 20px;
   border-radius: 4vw 4vw 0 0;
   background-color: var(--token-91879fd0-dbdd-4c64-ae12-6b899e52b8b5, #000000);
-  border: 1px solid #555353;
+  border: 1px solid #222222;
   color: #fff;
 }
 
@@ -18,7 +18,7 @@
   justify-content: center;
   align-items: center;
   gap: 24px;
-  flex-wrap: wrap; /* Para que se adapte en pantallas pequeñas */
+  flex-wrap: wrap; 
   margin-top: 12px;
   text-align: left;
 }
@@ -271,7 +271,7 @@
 }
 
 .emoji svg {
-  width: 20px; /* tamaño */
+  width: 20px; 
   height: 20px;
-  fill: white; /* color del emoji */
+  fill: white;
 }
