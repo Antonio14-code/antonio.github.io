@@ -164,7 +164,7 @@
   gap: 2rem;
   flex: 1;
 }
-/* Tarjeta general */
+
 .card-proyecto {
   margin-top: -2vw;
   position: relative;
@@ -327,9 +327,7 @@
   margin-left: 8px;
 }
 
-/* --- MEDIA QUERIES --- */
 
-/* Tablets */
 @media (max-width: 1024px) {
   .lateral-info {
     margin-left: 5vw;
@@ -346,7 +344,6 @@
   }
 }
 
-/* Móviles */
 @media (max-width: 768px) {
   .lateral-info {
     margin-left: 0;
@@ -384,7 +381,6 @@
   }
 }
 
-/* Smartphones pequeños */
 @media (max-width: 480px) {
   .contenedor-titulo h1 {
     font-size: clamp(1.2rem, 7vw, 2rem);
