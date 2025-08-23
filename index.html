@@ -14,10 +14,8 @@
 </head>
 <body>
 
-  <!-- Círculo de cursor -->
   <div id="cursorCircle" class="cursor-circle"></div>
 
-  <!-- Encabezado -->
   <div class="header-container">
     <header class="encabezado">
       <div class="logo">
@@ -58,11 +56,11 @@
             </h1>
             <p id="textoAnimado" data-text="I'm a Software Engineering intern with an interest in technological development and programming. Welcome to my portfolio!"></p>
             <div class="botones-acciones">
-              <a class="boton-proyectos" href="https://github.com/Antonio14-code">
-                <span>See All Proyects</span>
+              <a class="boton-proyectos" href="https://www.linkedin.com/in/jesus-antonio-gonzales-jara-913171300/recent-activity/all/">
+                <span>See All Certificates</span>
               </a>
-              <a class="boton-contacto" href="#contacto">
-                <span>Contact Now</span>
+              <a class="boton-contacto" href="#seccion-proyectos">
+                <span>See All Projects</span>
               </a>
             </div>
           </div>
@@ -139,7 +137,6 @@
     </div>    
     
     <div class="perfil-container">
-      <!-- Columna izquierda -->
       <div class="perfil-izquierda">
         <div class="perfil-foto-wrapper">
           <img src="img/foto.png" alt="Foto perfil" class="perfil-foto" />
@@ -173,7 +170,6 @@
     </div>
 
 
-      <!-- Columna derecha -->
       <div class="perfil-derecha">
         <p class="intro-text">
           I'm Jesus, a Software Engineering intern with AI and a Web Developer based in Lima, Perú. I specialize in developing technological solutions aimed at solving real-world problems.
@@ -328,7 +324,7 @@
       </div>
       <div class="banner-buttons">
         <a href="https://github.com/Antonio14-code" class="btn btn-dark">See All Projects</a>
-        <a href="#contact" class="btn btn-light">Contact Now</a>
+        <a href="#contacto" class="btn btn-light">Contact Now</a>
       </div>
     </div>
   </section>
@@ -457,96 +453,90 @@
   </section>
 
   <section class="contacto-section" id="contacto">
-  <div class="contacto-header">
-    <div class="etiqueta-contacto">
-      <div class="circle-white">
-        <div class="circle-black">
-          <div class="small-circle"></div>
+    <div class="contacto-header">
+      <div class="etiqueta-contacto">
+        <div class="circle-white">
+          <div class="circle-black">
+            <div class="small-circle"></div>
+          </div>
         </div>
+        Let's Connect
       </div>
-      Let's Connect
+
+      <h1 class="titulo-contacto">
+        <span class="blanco">Let's Collaborate</span>
+        <span class="gris">and Begin the work</span>
+      </h1>
     </div>
 
-    <h1 class="titulo-contacto">
-      <span class="blanco">Let's Collaborate</span>
-      <span class="gris">and Begin the work</span>
-    </h1>
-  </div>
-
-  <!-- NUEVO CONTENEDOR HORIZONTAL -->
-  <div class="contenido-form-wrapper">
-    <div class="contenido-left">
-      <div class="estadisticas">
-        <div class="stat-box">
-          <h2>92%</h2>
-          <p>Code from 0</p>
-        </div>
-        <div class="stat-box">
-          <h2>2 weeks</h2>
-          <p>Developmental</p>
-        </div>
-        <div class="stat-box">
-          <h2>4.5</h2>
-          <p>Average Rating</p>
-        </div>
-      </div>
-
-      <!-- Testimonio -->
-      <div class="testimonio">
-            <div class="avatar">
-              <img src="/img/logogpya.png" alt="Client Photo">
-            </div>
-            <div class="contenido-testimonio">
-              <h3>GP&A ESTUDIO CONTABLE</h3>
-              <span>Graciela Padilla</span>
-              <div class="estrellas">★★★★☆</div>
-              <p>I have no doubt that his talent, dedication, and technical skills will make him an asset to any organization.  </p>
-            </div>
+    <div class="contenido-form-wrapper">
+      <div class="contenido-left">
+        <div class="estadisticas">
+          <div class="stat-box">
+            <h2>92%</h2>
+            <p>Code from 0</p>
+          </div>
+          <div class="stat-box">
+            <h2>2 weeks</h2>
+            <p>Developmental</p>
+          </div>
+          <div class="stat-box">
+            <h2>4.5</h2>
+            <p>Average Rating</p>
+          </div>
         </div>
 
         <div class="testimonio">
-          <div class="avatar">
-            <img src="/img/logocasas.jpg" alt="Client Photo">
+              <div class="avatar">
+                <img src="/img/logogpya.png" alt="Client Photo">
+              </div>
+              <div class="contenido-testimonio">
+                <h3>GP&A ESTUDIO CONTABLE</h3>
+                <span>Graciela Padilla</span>
+                <div class="estrellas">★★★★☆</div>
+                <p>I have no doubt that his talent, dedication, and technical skills will make him an asset to any organization.  </p>
+              </div>
           </div>
-          <div class="contenido-testimonio">
-            <h3>EQUIPAMIENTO HOTELERO PERU</h3>
-            <span>Edith</span>
-            <div class="estrellas">★★★★★</div>
-            <p>I was very impressed with the work you did on the website. The effort, dedication, and care put into every detail are evident.</p>
+
+          <div class="testimonio">
+            <div class="avatar">
+              <img src="/img/logocasas.jpg" alt="Client Photo">
+            </div>
+            <div class="contenido-testimonio">
+              <h3>EQUIPAMIENTO HOTELERO PERU</h3>
+              <span>Edith</span>
+              <div class="estrellas">★★★★★</div>
+              <p>I was very impressed with the work you did on the website. The effort, dedication, and care put into every detail are evident.</p>
+            </div>
           </div>
         </div>
+
+        <div class="contacto-container">
+          <form id="contact-form" action="https://formspree.io/f/mandwwod" method="POST">
+            <div class="form-row">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+
+            <input type="text" name="website" placeholder="Company Website (optional)">
+
+            <select name="budget" required>
+              <option value="">Select Budget...</option>
+              <option value="under5k">Under $100</option>
+              <option value="5k-10k">$500 - $1k</option>
+              <option value="10k-50k">$2.5k - $3k</option>
+              <option value="50k+">$5k+</option>
+            </select>
+
+            <textarea name="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+            <p class="disclaimer">We will reach out to you within 48hrs</p>
+          </form>
+        </div>
       </div>
-
-      <!-- Columna derecha: Formulario -->
-      <div class="contacto-container">
-        <form id="contact-form" action="https://formspree.io/f/mandwwod" method="POST">
-          <div class="form-row">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-          </div>
-
-          <input type="text" name="website" placeholder="Company Website (optional)">
-
-          <select name="budget" required>
-            <option value="">Select Budget...</option>
-            <option value="under5k">Under $100</option>
-            <option value="5k-10k">$500 - $1k</option>
-            <option value="10k-50k">$2.5k - $3k</option>
-            <option value="50k+">$5k+</option>
-          </select>
-
-          <textarea name="message" placeholder="Your Message" required></textarea>
-
-          <button type="submit">Send Message</button>
-
-          <p class="disclaimer">We will reach out to you within 48hrs</p>
-        </form>
-
-      </div>
-    </div>
   </section>
-
-
 <script src="js/script.js"></script>
 </body>
 </html>

@@ -224,7 +224,8 @@
 
 #contact-form textarea {
   resize: vertical;
-  min-height: 120px;
+  min-height: 120px; 
+  max-height: 250px;
 }
 
 #contact-form button {
@@ -323,7 +324,6 @@
   }
 }
 
-/* Smartphones pequeños (<=480px) */
 @media (max-width: 480px) {
   .titulo-contacto {
     font-size: 1.2rem;

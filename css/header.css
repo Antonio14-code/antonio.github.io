@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
-/* === Estilos generales === */
 body {
   font-family: "Acme", sans-serif;
   background-color: #000;
@@ -8,7 +7,6 @@ body {
   padding: 0;
 }
 
-/* === Contenedor del Encabezado === */
 .header-container {
   position: fixed;
   top: 20px;
@@ -31,7 +29,6 @@ body {
   flex-wrap: wrap; 
 }
 
-/* === Encabezado === */
 .encabezado {
   display: flex;
   align-items: center;
@@ -39,7 +36,6 @@ body {
   flex: 1;
 }
 
-/* === Logo === */
 .logo {
   font-size: 22px;
   font-weight: bold;
@@ -47,7 +43,6 @@ body {
   transition: color 0.3s ease;
 }
 
-/* === Botón Hamburguesa === */
 .menu-toggle {
   display: none;
   background: none;
@@ -77,7 +72,6 @@ body {
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* === Navegación === */
 .navegacion {
   display: flex;
   align-items: center;
@@ -110,7 +104,6 @@ body {
   display: block;
 }
 
-/* === Responsive === */
 @media (max-width: 1100px) {
   .header-container {
     width: 60%;
